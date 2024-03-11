@@ -61,7 +61,7 @@ enum class CupcakeScreen(@StringRes val title: Int) {
     start(title = R.string.app_name),
     flavor(title = R.string.choose_flavor),
     pickup(title = R.string.choose_pickup_date),
-    summary(title = R.string.order_summary)
+    summary(title = R.string.order_summary),
 
 }
 
@@ -102,7 +102,10 @@ fun CupcakeApp(
 ) {
 
 
-    /** return the current backStackEntry(visible Destination) as an state and it updated when the backStack get updated with navigation */
+    /**
+     *  return the current backStackEntry(visible Destination) as an state
+     *  and it updated when the backStack get updated with navigation
+     **/
     /** return the current backStackEntry(visible Destination) as an state and it updated when the backStack get updated with navigation */
     val backStackEntry by navController.currentBackStackEntryAsState()
 
